@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project  name="HW2">
+	<property name="Hel" value="Hell"/>
+	<target name="Hell">
+		<echo>${Hel}</echo>
+	</target>
+</project>
