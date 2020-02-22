@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project  name="HW2">
-	<property name="Hel" value="Hell"/>
-	<target name="Hell">
-		<echo>${Hel}</echo>
+<project	default="compile">
+	<property name="src.java.dir" location="./src/najah/edu"/>
+		<property name="result.dir" location="./target"/>
+	<property name="result.javaclasses.dir" location="${result.dir}/classes"/>
+	<target name="compile">
+	<mkdir dir="${result.javaclasses.dir}"/>
+		<javac srcdir="${src.java.dir}"  destdir="${result.javaclasses.dir}"  debug="true"  includeantruntime="false">
+		</javac>
 	</target>
+
+
 </project>
